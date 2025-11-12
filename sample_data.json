@@ -1,0 +1,26 @@
+{
+  "materials": [
+    {"name": "MateriaA", "available": 1000},
+    {"name": "MateriaB", "available": 600}
+  ],
+  "products": [
+    {
+      "name": "Producto1",
+      "unit_cost": 5.0,
+      "materials": {"MateriaA": 2.0, "MateriaB": 0.5},
+      "demand_a": 200,
+      "demand_b": 1.0,
+      "price_min": 6.0,
+      "price_max": 30.0
+    },
+    {
+      "name": "Producto2",
+      "unit_cost": 3.0,
+      "materials": {"MateriaA": 1.0, "MateriaB": 1.5},
+      "demand_a": 150,
+      "demand_b": 0.8,
+      "price_min": 4.0,
+      "price_max": 25.0
+    }
+  ]
+}
