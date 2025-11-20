@@ -25,3 +25,10 @@ docker build -t optimizador:latest .
 docker run -p 8501:8501 optimizador:latest
 ```
 esto expondra los ports y se podra ingresar a la web de la app 
+
+Usando volumenes usamos el sigueinte comando 
+```bash
+docker run --rm -p 8501:8501
+     -v "$(pwd)":/app:Z     
+     optimizador:latest
+```

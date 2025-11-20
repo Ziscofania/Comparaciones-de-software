@@ -1,26 +1,86 @@
 {
-  "materials": [
-    {"name": "MateriaA", "available": 1000},
-    {"name": "MateriaB", "available": 600}
-  ],
-  "products": [
+  "flexsim": [
     {
-      "name": "Producto1",
-      "unit_cost": 5.0,
-      "materials": {"MateriaA": 2.0, "MateriaB": 0.5},
-      "demand_a": 200,
-      "demand_b": 1.0,
-      "price_min": 6.0,
-      "price_max": 30.0
+      "Producto": "SKU1",
+      "real_production": 1180,
+      "tiempo_ciclo_seg": 4.3,
+      "costo_real": 2.7
     },
     {
-      "name": "Producto2",
-      "unit_cost": 3.0,
-      "materials": {"MateriaA": 1.0, "MateriaB": 1.5},
-      "demand_a": 150,
-      "demand_b": 0.8,
-      "price_min": 4.0,
-      "price_max": 25.0
+      "Producto": "SKU2",
+      "real_production": 620,
+      "tiempo_ciclo_seg": 5.1,
+      "costo_real": 5.5
+    },
+    {
+      "Producto": "Blusa A",
+      "real_production": 2300,
+      "tiempo_ciclo_seg": 6.2,
+      "costo_real": 8.8
+    },
+    {
+      "Producto": "Blusa B",
+      "real_production": 1700,
+      "tiempo_ciclo_seg": 7.0,
+      "costo_real": 10.9
+    }
+  ],
+
+  "companies": [
+    {
+      "name": "Bastian Solutions (Almacén Automatizado)",
+      "materials": [
+        { "name": "Caja", "available": 5000 },
+        { "name": "Contenedor", "available": 2000 }
+      ],
+      "products": [
+        {
+          "name": "SKU1",
+          "unit_cost": 2.0,
+          "materials": { "Caja": 1, "Contenedor": 0.2 },
+          "demand_a": 10000,
+          "demand_b": 1.0,
+          "price_min": 3.0,
+          "price_max": 10.0
+        },
+        {
+          "name": "SKU2",
+          "unit_cost": 5.0,
+          "materials": { "Caja": 2, "Contenedor": 0.5 },
+          "demand_a": 5000,
+          "demand_b": 1.0,
+          "price_min": 6.0,
+          "price_max": 20.0
+        }
+      ]
+    },
+
+    {
+      "name": "Textindustria S.A.",
+      "materials": [
+        { "name": "Tela", "available": 20000 },
+        { "name": "Hilo", "available": 10000 }
+      ],
+      "products": [
+        {
+          "name": "Blusa A",
+          "unit_cost": 8.0,
+          "materials": { "Tela": 2.5, "Hilo": 0.1 },
+          "demand_a": 3000,
+          "demand_b": 1.0,
+          "price_min": 10.0,
+          "price_max": 50.0
+        },
+        {
+          "name": "Blusa B",
+          "unit_cost": 10.0,
+          "materials": { "Tela": 3.0, "Hilo": 0.15 },
+          "demand_a": 2000,
+          "demand_b": 1.0,
+          "price_min": 12.0,
+          "price_max": 60.0
+        }
+      ]
     }
   ]
 }
